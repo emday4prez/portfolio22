@@ -1,4 +1,5 @@
 import './App.css';
+import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -9,6 +10,7 @@ import Bio from './components/Bio';
 
 function App() {
   return (
+    
     <div className='App'>
           <Navigation/>            
           <Routes>   

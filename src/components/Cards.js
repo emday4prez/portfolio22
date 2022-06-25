@@ -4,10 +4,13 @@ import Button from 'react-bootstrap/Button'
 import map from  '../assets/Map.png'
 import pacMan from '../assets/pacmen-factory.gif'
 import eyes from '../assets/eyes.png'
+import ip from '../assets/ip2.png'
+import memory from '../assets/memory.png'
 
 function Cards() {
   return (
     <div className='card-container'>
+     
       <Card style={{ width: '18rem', margin: '1rem' }}>
         <Card.Img variant="top" src={map} />
         <Card.Body>
@@ -56,6 +59,35 @@ function Cards() {
          
         </Card.Body>
       </Card>
+       <Card style={{ width: '18rem', margin: '1rem' }}>
+        <Card.Img variant="top" src={ip} />
+        <Card.Body>
+          <Card.Title>IP Address Tracker</Card.Title>
+          <Card.Text>
+            Fetching IP Address data, and displaying the location on a map.
+          </Card.Text>
+            {/* <Card.Link href="https://emday4prez.github.io/RealTimeBusTracker/" target="blank">
+            <Button  variant="primary">Live Site</Button>
+          </Card.Link> */}
+          <Card.Link  href="https://github.com/emday4prez/ip-address-tracker" target="blank">
+            <Button variant="primary">Github Repo</Button>
+          </Card.Link>
+          
+        </Card.Body>
+      </Card>
+       {/* <Card style={{ width: '18rem', margin: '1rem' }}>
+        <Card.Img variant="top" src={memory} />
+        <Card.Body>
+          <Card.Title>Memory Match</Card.Title>
+          <Card.Text>
+            A game made with React hooks.
+          </Card.Text>
+          <Card.Link  href="https://emday4prez.github.io/memories/" target="blank">
+            <Button variant="primary">Live Site</Button>
+          </Card.Link>
+          
+        </Card.Body>
+      </Card> */}
     </div>
    
   )
